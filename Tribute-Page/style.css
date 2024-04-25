@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body a {
+    text-decoration: none;
+    color: gray;
+}
+
+body a:hover {
+    color: darkgray;
+}
+
+header {
+    background-color: navy;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    word-spacing: 7px;
+    font-size: 1.4rem;
+}
+
+.intro-para {
+    float: left;
+    font-size: 1.8rem;
+    text-align: justify;
+    width: 74%;
+    margin: 30px 20px 0;
+}
+
+.intro-img {
+    height: 350px;
+    margin: 28px 10px 0;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-size: 1.2rem;
+}
+
+.intro-para2, .intro-para3 {
+    font-size: 1.8rem;
+    text-align: justify;
+    width: 97%;
+    margin: 0 20px;
+}
+
+#achievements {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin: 30px 0;
+    padding: 30px 0;
+    background-color: #ffffff;
+}
+
+.awards-heading {
+    background-color: navy;
+    color: #ffffff;
+    width:max-content;
+    padding: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    word-spacing: 7px;
+}
+
+.awards-table {
+    background-color: rgb(209, 209, 225);
+    margin: 20px auto;
+    width: 80%;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.awards-table th {
+    background-color: blue;
+    color: #ffffff;
+    width: max-content;
+}
+
+.awards a {
+    color: black;
+}
+
+#quotes {
+    height: 90vh;
+}
+
+.quotes-heading {
+    background-color: navy;
+    color: #ffffff;
+    width:max-content;
+    padding: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    word-spacing: 7px;
+}
+
+.quotes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.quotes p {
+    font-size: 1.5rem
+}
+
+.quotes-cards {
+    background-color: white;
+    width: 60%;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px rgb(79, 79, 79);
+}
+
+footer {
+    background-color: navy;
+    color: #ffffff;
+    font-size: 1.5rem;
+    word-spacing: 5px;
+    text-align: center;
+    padding: 10px 0;
+}

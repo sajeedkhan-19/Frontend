@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(14, 13, 16);
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.apply_box {
+  max-width: 600px;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  margin-top: 25px;
+  box-shadow: 3px 3px 5px rgba(30, 144, 255, 0.1);
+  border-radius: 10px;
+}
+
+.title_small {
+  font-size: 20px;
+}
+
+.form_container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.form_control {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+input, textarea:focus {
+  outline-color: dodgerblue;
+}
+
+input:hover, textarea:hover, select:hover {
+  background-color: rgb(231, 228, 228);
+}
+
+#gender {
+  display: flex;
+  height: 30px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.radio-btn {
+  margin: 0 6px 0 30px;
+}
+
+.button_container {
+  display: flex;
+
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+button {
+  background-color: dodgerblue;
+  border: transparent solid 2px;
+  padding: 5px 10px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s ease-in;
+}
+button:hover {
+  background-color: rgb(107, 181, 255);
+  border: 2px solid dodgerblue;
+  color: black;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+.textarea_control {
+  grid-column: 1 / span 2;
+}
+.textarea_control textarea {
+  width: 100%;
+}
+
+@media (max-width: 460px) {
+  .textarea_control {
+    grid-column: 1 / span 1;
+  }
+} ;

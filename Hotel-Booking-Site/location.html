@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel Contact</title>
+    <title>Hotel Location</title>
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <!-- Font Link -->
     <link
@@ -42,42 +42,34 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="contact-form">
-        <h1>Contact Us</h1>
-        <form action="#" method="post">
-          <label for="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter Name"
-            required
-          />
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter Email"
-            required
-          />
-          <label for="message">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="Enter Message"
-            required
-          ></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </main>
-    <footer id="footer">
-        <div class="gallery-footer">
-            <p>&copy; 2024 Designed by Sajeed Khan</p>
+    <section id="location">
+      <div class="location-block">
+        <div class="location-details">
+            <h2>Location Details</h2>
+            <ul>
+              <li><strong>Address:</strong> 123 Main Street, Cityville, State, ZIP</li>
+              <li><strong>Contact:</strong> Phone: +1 (123) 456-7890, Email: info@example.com</li>
+              <li><strong>Directions:</strong> Located near City Park. Take Exit 123 from the highway.</li>
+              <li><strong>Nearby Attractions:</strong> City Park, Museum of Art, Shopping District</li>
+            </ul>
         </div>
-    </footer>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.14571458526!2d72.71637318028604!3d19.082177512541442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1714552157105!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="gallery-footer">
+          <p>&copy; 2024 Designed by Sajeed Khan</p>
+      </div>
+  </footer>
   </body>
 </html>

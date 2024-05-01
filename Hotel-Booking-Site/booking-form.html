@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <!-- Font Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/c5a7106d12.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/logo.png" alt="logo" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./rooms.html">Rooms</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./location.html">Location <i class="fa-sharp fa-solid fa-location-dot"></i></a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li><a href="./booking-form.html">
+                        <button class="book-btn">Book Now</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="submit_booking.php" method="post" class="booking-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+            <label for="phone">Phone:</label>
+            <input type="number" id="phone" name="phone" placeholder="Enter Phone Number" required>
+            <div class="booking-form-dates">
+            <div class="booking-form-date">
+            <label for="check-in">Check-in Date:</label>
+            <input type="date" id="check-in" name="check-in" required>
+            </div>
+            <div class="booking-form-date">
+            <label for="check-out">Check-out Date:</label>
+            <input type="date" id="check-out" name="check-out" required>
+            </div>
+            <div class="booking-form-date">
+            <label for="rooms">Number of Rooms:</label>
+            <input type="number" id="rooms" name="rooms" min="1" placeholder="Enter No. Of Rooms" required>
+            </div>
+            <div class="booking-form-date">
+            <label for="document">Upload Document Proof:</label>
+            <input type="file" id="document" name="document" class="doc-input" required>
+            </div>
+            </div>
+            <label for="message">Message (optional):</label>
+            <textarea id="message" name="message" rows="4" placeholder="Enter Message"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+    </main>
+    <footer id="footer">
+        <div class="gallery-footer">
+            <p>&copy; 2024 Designed by Sajeed Khan</p>
+        </div>
+    </footer>
+</body>
+</html>

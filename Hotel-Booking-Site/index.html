@@ -1,187 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel</title>
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <!-- Font Link -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS Link -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <!-- Font Awesome Link -->
-    <script src="https://kit.fontawesome.com/c5a7106d12.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/c5a7106d12.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <img src="./assets/logo.png" alt="logo" class="logo-img">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#banner">Home</a></li>
-                <li><a href="#rooms">Rooms</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="#Amenities">Amenities</a></li>
-                <li><a href="#Location">Location <i class="fa-sharp fa-solid fa-location-dot"></i></a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./booking-form.html">
-                        <button class="book-btn">Book Now</button>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <img src="./assets/logo.png" alt="logo" class="logo-img" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#banner">Home</a></li>
+          <li><a href="./rooms.html">Rooms</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li>
+            <a href="./location.html"
+              >Location <i class="fa-sharp fa-solid fa-location-dot"></i
+            ></a>
+          </li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li>
+            <a href="./booking-form.html">
+              <button class="book-btn">Book Now</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section id="banner" class="banner">
-          <div class="banner-content">
-              <h1 class="banner-heading">Discover Your Perfect Getaway</h1>
-              <p class="banner-desc">Whether you seek adventure or relaxation, our haven awaits to fulfill your every desire. Book your escape today and discover paradise.</p>
+      <section id="banner" class="banner">
+        <div class="banner-content">
+          <h1 class="banner-heading">Discover Your Perfect Getaway</h1>
+          <p class="banner-desc">
+            Whether you seek adventure or relaxation, our haven awaits to
+            fulfill your every desire. Book your escape today and discover
+            paradise.
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section id="rooms" class="rooms">
+        <div class="room-section-title">
+          <h2>Explore Our Suites</h2>
+        </div>
+        <div class="room-cards">
+          <!-- Room 1 -->
+          <div class="room-card">
+            <img src="./assets/room-1.jpg" alt="Room 1" />
+            <ul class="details">
+              <li>AC</li>
+              <li>Queen-sized bed</li>
+              <li>Ensuite bathroom</li>
+            </ul>
+            <p class="price">$100 per night</p>
+            <a href="./booking-form.html">
+              <button class="card-btn">Book Now</button>
+            </a>
           </div>
-        </section>
-        <hr>
-        <section id="rooms" class="rooms">
-          <div class="room-section-title">
-            <h2>Explore Our Suites</h2>
+          <!-- Room 2 -->
+          <div class="room-card">
+            <img src="./assets/room-2.jpg" alt="Room 2" />
+            <ul class="details">
+              <li>AC</li>
+              <li>King-sized bed</li>
+              <li>Private terrace</li>
+            </ul>
+            <p class="price">$150 per night</p>
+            <a href="./booking-form.html">
+              <button class="card-btn">Book Now</button>
+            </a>
           </div>
-          <div class="room-cards">
-              <!-- Room 1 -->
-              <div class="room-card">
-                  <img src="./assets/room-1.jpg" alt="Room 1">
-                  <ul class="details">
-                    <li>AC</li>
-                    <li>Queen-sized bed</li>
-                    <li>Ensuite bathroom</li>
-                  </ul>
-                  <p class="price">$100 per night</p>
-                  <a href="./booking-form.html">
-                    <button class="card-btn">Book Now</button>
-                  </a>
-              </div>
-              <!-- Room 2 -->
-              <div class="room-card">
-                <img src="./assets/room-2.jpg" alt="Room 2">
-                <ul class="details">
-                  <li>AC</li>
-                  <li>King-sized bed</li>
-                  <li>Private terrace</li>
-                </ul>
-                <p class="price">$150 per night</p>
-                <a href="./booking-form.html">
-                  <button class="card-btn">Book Now</button>
-                </a>
-              </div>
-              <!-- Room 3 -->
-              <div class="room-card">
-                <img src="./assets/room-3.jpg" alt="Room 3">
-                <ul class="details">
-                  <li>AC</li>
-                  <li>Double bed</li>
-                  <li>City view</li>
-                </ul>
-                <p class="price">$120 per night</p>
-                <a href="./booking-form.html">
-                  <button class="card-btn">Book Now</button>
-                </a>
-              </div>
-              <!-- Room 4 -->
-              <div class="room-card">
-                <img src="./assets/room-4.jpg" alt="Room 4">
-                <ul class="details">
-                  <li>AC</li>
-                  <li>Double bed</li>
-                  <li>City view</li>
-                </ul>
-                <p class="price">$130 per night</p>
-                <a href="./booking-form.html">
-                  <button class="card-btn">Book Now</button>
-                </a>
-              </div>
-              <!-- Room 5 -->
-              <div class="room-card">
-                <img src="./assets/room-5.jpg" alt="Cozy Cabin">
-                <ul class="details">
-                  <li>AC</li>
-                  <li>Queen-sized bed</li>
-                  <li>Ensuite bathroom</li>
-                </ul>
-                <p class="price">$100 per night</p>
-                <a href="./booking-form.html">
-                  <button class="card-btn">Book Now</button>
-                </a>
-              </div>
-              <!-- Room 6 -->
-              <div class="room-card">
-                <img src="./assets/room-6.jpg" alt="Beachfront Bungalow">
-                <ul class="details">
-                  <li>AC</li>
-                  <li>King-sized bed</li>
-                  <li>Private terrace</li>
-                </ul>
-                <p class="price">$300 per night</p>
-                <a href="./booking-form.html">
-                  <button class="card-btn">Book Now</button>
-                </a>
-              </div>
-              <!-- Room 7 -->
-              <div class="room-card">
-                <img src="./assets/room-7.jpg" alt="Penthouse Suite">
-                <ul class="details">
-                  <li>AC</li>
-                  <li>King-sized bed</li>
-                  <li>City view</li>
-                </ul>
-                <p class="price">$500 per night</p>
-                <a href="./booking-form.html">
-                  <button class="card-btn">Book Now</button>
-                </a>
-              </div>
-              <!-- Room 8 -->
-              <div class="room-card">
-                <img src="./assets/room-8.jpg" alt="Classic Double">
-                <ul class="details">
-                  <li>AC</li>
-                  <li>Double bed</li>
-                  <li>City view</li>
-                </ul>
-                <p class="price">$120 per night</p>
-                <a href="./booking-form.html">
-                  <button class="card-btn">Book Now</button>
-                </a>
-              </div>
+          <!-- Room 3 -->
+          <div class="room-card">
+            <img src="./assets/room-3.jpg" alt="Room 3" />
+            <ul class="details">
+              <li>AC</li>
+              <li>Double bed</li>
+              <li>City view</li>
+            </ul>
+            <p class="price">$120 per night</p>
+            <a href="./booking-form.html">
+              <button class="card-btn">Book Now</button>
+            </a>
           </div>
-          <div class="rooms-view-all-btn">
-            <a href="./rooms.html"><button class="view-all-btn">View All</button></a>
+          <!-- Room 4 -->
+          <div class="room-card">
+            <img src="./assets/room-4.jpg" alt="Room 4" />
+            <ul class="details">
+              <li>AC</li>
+              <li>Double bed</li>
+              <li>City view</li>
+            </ul>
+            <p class="price">$130 per night</p>
+            <a href="./booking-form.html">
+              <button class="card-btn">Book Now</button>
+            </a>
           </div>
-        </section>
-        <hr>
-        <section></section>
-        <hr>
+          <!-- Room 5 -->
+          <div class="room-card">
+            <img src="./assets/room-5.jpg" alt="Cozy Cabin" />
+            <ul class="details">
+              <li>AC</li>
+              <li>Queen-sized bed</li>
+              <li>Ensuite bathroom</li>
+            </ul>
+            <p class="price">$100 per night</p>
+            <a href="./booking-form.html">
+              <button class="card-btn">Book Now</button>
+            </a>
+          </div>
+          <!-- Room 6 -->
+          <div class="room-card">
+            <img src="./assets/room-6.jpg" alt="Beachfront Bungalow" />
+            <ul class="details">
+              <li>AC</li>
+              <li>King-sized bed</li>
+              <li>Private terrace</li>
+            </ul>
+            <p class="price">$300 per night</p>
+            <a href="./booking-form.html">
+              <button class="card-btn">Book Now</button>
+            </a>
+          </div>
+          <!-- Room 7 -->
+          <div class="room-card">
+            <img src="./assets/room-7.jpg" alt="Penthouse Suite" />
+            <ul class="details">
+              <li>AC</li>
+              <li>King-sized bed</li>
+              <li>City view</li>
+            </ul>
+            <p class="price">$500 per night</p>
+            <a href="./booking-form.html">
+              <button class="card-btn">Book Now</button>
+            </a>
+          </div>
+          <!-- Room 8 -->
+          <div class="room-card">
+            <img src="./assets/room-8.jpg" alt="Classic Double" />
+            <ul class="details">
+              <li>AC</li>
+              <li>Double bed</li>
+              <li>City view</li>
+            </ul>
+            <p class="price">$120 per night</p>
+            <a href="./booking-form.html">
+              <button class="card-btn">Book Now</button>
+            </a>
+          </div>
+        </div>
+        <div class="rooms-view-all-btn">
+          <a href="./rooms.html"
+            ><button class="view-all-btn">View All</button></a
+          >
+        </div>
+      </section>
+      <hr />
+      <section id="amenities">
+        <h2 class="amenities-heading">Amenities</h2>
+        <div class="amenities">
+          <ul>
+            <li>
+              <h3>Wi-Fi</h3>
+              <ul>
+                <li>
+                  Complimentary high-speed Wi-Fi available throughout the hotel.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3>Parking</h3>
+              <ul>
+                <li>Self-parking and valet parking available</li>
+                <li>Secure and convenient parking facilities</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Restaurant/Cafe</h3>
+              <ul>
+                <li>Breakfast, lunch, and dinner served daily.</li>
+                <li>Diverse menu featuring local and international cuisine.</li>
+                <li>Room service available for guests' convenience.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Fitness Center</h3>
+              <ul>
+                <li>
+                  State-of-the-art cardio and strength training equipment.
+                </li>
+                <li>Personal trainers available upon request.</li>
+                <li>Fitness classes and wellness programs offered.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Swimming Pool</h3>
+              <ul>
+                <li>Outdoor swimming pool with sun loungers and umbrellas.</li>
+                <li>Hot tub/jacuzzi for ultimate relaxation.</li>
+                <li>Poolside bar serving refreshing beverages and snacks.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Spa/Wellness Facilities</h3>
+              <ul>
+                <li>
+                  Range of massage therapies and body treatments available.
+                </li>
+                <li>Facial treatments and beauty services offered.</li>
+                <li>Sauna, steam room, and relaxation lounge.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Business Center</h3>
+              <ul>
+                <li>Printing, copying, and faxing facilities.</li>
+                <li>High-speed internet access and computer workstations.</li>
+                <li>
+                  Meeting rooms available for business meetings and conferences.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3>24-Hour Front Desk</h3>
+              <ul>
+                <li>Express check-in and check-out.</li>
+                <li>Luggage storage and concierge assistance.</li>
+                <li>Multilingual staff available for guest inquiries.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Accessibility Features</h3>
+              <ul>
+                <li>Wheelchair-accessible rooms and facilities.</li>
+                <li>
+                  ADA-compliant features (ramps, handrails, accessible
+                  bathrooms).
+                </li>
+                <li>Elevators for ease of mobility.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Laundry Services</h3>
+              <ul>
+                <li>Same-day laundry and dry cleaning services available.</li>
+                <li>Laundry bags and express service for guest convenience.</li>
+                <li>Ironing and garment pressing services offered.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr />
     </main>
-    <footer class="footer">
-          <div class="footer-content">
-            <div class="footer-section contact">
-              <h2 class="contact-heading">Contact Me</h2>
-              <div class="contact-block">
-                <p>123 Main Street, City</p><span>|</span>
-                <p>Phone: +91 (820) xxx-xxxx</p><span>|</span>
-                <p>Email: sajidkhan08143@gmail.com</p>
-              </div>
-            </div>
-            <div class="footer-section social">
-              <h2>Follow Me</h2>
-              <div class="social-icons">
-                <ul>
-                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-              </div>
-              <div class="footer-bottom">
-                <p>&copy; 2024 Designed by Sajeed Khan</p>
-              </div>
-            </div>
+    <footer id="main-footer">
+      <div class="footer-content">
+        <div class="footer-section contact">
+          <h2 class="contact-heading">Contact Me</h2>
+          <div class="contact-block">
+            <p>123 Main Street, City</p>
+            <span>|</span>
+            <p>Phone: +91 (820) xxx-xxxx</p>
+            <span>|</span>
+            <p>Email: sajidkhan08143@gmail.com</p>
           </div>
+        </div>
+        <div class="footer-section social">
+          <h2>Follow Me</h2>
+          <div class="social-icons">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2024 Designed by Sajeed Khan</p>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

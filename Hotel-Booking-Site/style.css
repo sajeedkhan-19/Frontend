@@ -1,13 +1,10 @@
 * {
-    --primary-color: #333333;
+    --primary-color: rgb(51, 51, 51);
     --accent-color: #FFFFFF;
     --highlight-color: #FFD700;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-html {
     scroll-behavior: smooth;
 }
 
@@ -24,7 +21,7 @@ hr {
 a {
     text-decoration: none;
 }
-
+/* Home Page Starts */
 /* Header Section Starts */
 header {
     background-color: var(--primary-color);
@@ -48,9 +45,9 @@ header {
 }
 
 nav ul {
-    list-style: none;
     display: flex;
     align-items: center;
+    list-style: none;
 }
 
 nav ul li {
@@ -72,6 +69,7 @@ nav ul li a:hover {
 
 .fa-location-dot {
     color: red;
+    padding-left: 3px;
 }
 
 .book-btn {
@@ -132,37 +130,23 @@ nav ul li a:hover {
 
 /* Rooms Section Starts */
 #rooms {
-    background-color: whitesmoke;
     width: 100%;
-    overflow: visible;
+    height: max-content;
 }
 
 .room-section-title {
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 80px;
     background-color: var(--primary-color);
     color: var(--highlight-color);
-    padding: 0 20px;
-}
-
-.room-section-title h2 {
-    margin-left: 20px;
 }
 
 .room-cards {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
-    justify-content: center;
-    text-align: center;
-    padding: 30px;
-}
-
-.room-cards img {
-    width: 300px;
-    height: 200px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px 20px;
 }
 
 .room-card {
@@ -171,16 +155,20 @@ nav ul li a:hover {
     font-weight: 700;
     margin: 20px auto;
     padding: 10px;
-    height: 350px;
     border-radius: 5px;
-    text-align: left;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
 .room-card:hover {
     transform: scale(1.05);
-    box-shadow: 2px 2px 4px rgba(255, 215, 0, 0.5);
+    box-shadow: 2px 2px 4px rgba(51, 51, 51, 0.5);
+}
+
+.room-cards img {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
 }
 
 .room-card ul {
@@ -208,7 +196,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 51px;
+    margin-right: 45px;
 }
 
 .view-all-btn {
@@ -216,8 +204,9 @@ nav ul li a:hover {
     color: var(--primary-color);
     font-size: 1.2rem;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 5px 10px;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -230,10 +219,46 @@ nav ul li a:hover {
 /* Rooms Section Ends */
 
 /* Amenities Section Starts */
+#amenities {
+    color: rgb(61, 61, 61);
+    width: 100%;
+}
+
+.amenities-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: var(--primary-color);
+    color: var(--highlight-color);
+}
+
+.amenities h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.amenities ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    gap: 10px;
+    margin: 30px 10% 0;
+    padding-bottom: 20px;
+    list-style: none;
+}
+
+.amenities ul li ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: square;
+}
 /* Amenities Section Ends */
 
 /* Footer Section Starts */
-footer {
+#main-footer {
     background-color: var(--primary-color);
     color: var(--accent-color);
     width: 100%;
@@ -244,19 +269,26 @@ footer {
 }
 
 .footer-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    justify-content: space-evenly;
+    gap: 50px;
+    margin-left: 80px;
+    padding: 0 50px;
 }
 
 .contact {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
+    padding-right: 40px;
+    border-right: 2px solid var(--highlight-color);
 }
 
 .contact-block {
     display: flex;
+    width: max-content;
+    gap: 5px;
 }
 
 .contact span {
@@ -272,49 +304,35 @@ footer {
 
 .social-icons ul {
     display: flex;
-}
-
-.social-icons a {
-    margin: 10px 20px 5px 0;
-}
-
-.social ul {
     list-style: none;
 }
 
-.social a {
+.social-icons a {
     color: var(--highlight-color);
+    margin: 10px 20px 5px 0;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #b3a200;
 }
 
 .footer-bottom {
-    margin: auto;
     word-spacing: 2px;
 }
 /* Footer Section Ends */
-
 /* Home Page Ends */
-
-/* Rooms Page Starts */
-/* Rooms Page Ends */
 
 /* Gallery Page Starts */
 #gallery-section {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    justify-content: center;
-    align-items: center;
 }
 
 .gallery {
+    position: relative;
+    top: 80px;
     width: 100%;
-    height: 80vh;
     text-align: center;
-}
-
-.gallery-hotel {
-    width: 100%;
-    height: 100vh;
 }
 
 .gallery-headings {
@@ -322,12 +340,7 @@ footer {
     color: var(--highlight-color);
     font-size: 2rem;
     font-weight: 700;
-    height: max-content;
-}
-
-.gallery-hotel {
-    position: relative;
-    top: 80px;
+    padding: 20px 0;
 }
 
 .gallery-heading-1 {
@@ -335,35 +348,192 @@ footer {
 }
 
 .hotel-img, .parking-img, .swimming-pool-img {
-    width: 800px;
-    margin-top: 20px;
+    width: 50%;
+    height: 30%;
+    margin: 20px;
     transition: all 0.3s ease;
 }
 
-.gallery-img {
-    width: 500px;
-    height: 300px;
-    margin: 20px 30px;
+.gallery-room-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 70px;
+}
+
+.gallery-room-images img {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    padding: 0;
     transition: all 0.3s ease;
 }
 
 .gallery img:hover {
     transform: scale(1.05);
-    box-shadow: 2px 2px 4px rgba(255, 215, 0, 0.5);
 }
+
+#gallery-footer {
+    width: 100%;
+    height: 50px;
+    margin-top: 80px;
+}
+
 /* Gallery Page Ends */
 
 /* Location Page Starts */
+#location {
+    width: 100%;
+}
+
+.location-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 100px;
+    margin-bottom: 45px;
+    padding-top: 180px;
+}
+
+.location-details {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 6%;
+    padding: 130px 10% 0;
+    font-size: 1.2rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.location-details h2 {
+    color: var(--primary-color);
+}
+
+.location-details ul {
+    list-style: none;
+}
+
+.map iframe {
+    width: 95%;
+    border-radius: 2px;
+}
 /* Location Page Ends */
 
-/* Booking Page Starts */
-/* Booking Page Ends */
-
-.contact-msg {
-    margin: 300px 450px;
-    font-size: 3rem;
-    font-weight: 700;
+/* Contact Page Starts */
+.contact-form {
     background-color: var(--primary-color);
     color: var(--accent-color);
+    width: 30%;
+    margin: 140px auto 52px;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, 1.1);
+    font-weight: 700;
+}
+
+.contact-form h1 {
     text-align: center;
+}
+
+.contact-form form {
+    margin-top: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input, textarea {
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #b3a200;
+}
+/* Contact Page Ends */
+
+/* Booking Page Starts */
+.booking-form {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    width: 30%;
+    margin: 94px auto 17px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, 1.1);
+    font-weight: 700;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.booking-form input, textarea {
+    width: 100%;
+    padding: 9px 10px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.booking-form-dates {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.booking-form-date {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.booking-form .doc-input {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.booking-form button {
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+    padding: 5px 15px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+}
+
+.booking-form button:hover {
+    background-color: #b3a200;
+}
+/* Booking Page Ends */
+
+#footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

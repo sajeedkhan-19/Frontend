@@ -383,6 +383,7 @@ nav ul li a:hover {
 /* Location Page Starts */
 #location {
     width: 100%;
+    height: 93vh;
 }
 
 .location-block {
@@ -391,7 +392,7 @@ nav ul li a:hover {
     width: 100%;
     gap: 100px;
     margin-bottom: 45px;
-    padding-top: 180px;
+    padding-top: 150px;
 }
 
 .location-details {
@@ -424,7 +425,8 @@ nav ul li a:hover {
     background-color: var(--primary-color);
     color: var(--accent-color);
     width: 30%;
-    margin: 140px auto 52px;
+    height: 67vh;
+    margin: 140px auto 50px;
     padding: 18px;
     border-radius: 8px;
     box-shadow: 4px 5px 6px rgba(0, 0, 0, 1.1);
@@ -472,7 +474,8 @@ nav ul li a:hover {
     background-color: var(--primary-color);
     color: var(--accent-color);
     width: 30%;
-    margin: 94px auto 17px;
+    height: 78vh;
+    margin: 94px auto 16px;
     padding: 10px 20px;
     border-radius: 8px;
     box-shadow: 4px 5px 6px rgba(0, 0, 0, 1.1);
@@ -536,4 +539,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    left: 0;
+    bottom: 0;
 }

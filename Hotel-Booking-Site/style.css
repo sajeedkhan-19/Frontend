@@ -6,6 +6,21 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    /* Set the width and height of the scrollbar */
+    ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+    ::-webkit-scrollbar-track {
+      background: var(--primary-color);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--highlight-color);
+      border-radius: 10px;
+}
+    ::-webkit-scrollbar-thumb:hover {
+      background: #b3a200;
+    }
 }
 
 body {
@@ -63,7 +78,7 @@ nav ul li a {
     color: var(--accent-color);
 }
 
-nav ul li a:hover {
+nav ul li a:hover, nav ul li a.active {
     color: var(--highlight-color);
 }
 
@@ -84,7 +99,7 @@ nav ul li a:hover {
     transition: all 0.3s ease;
 }
 
-.book-btn:hover{
+.book-btn:hover, .book-btn button.active {
     background-color: #b3a200;
     transform: scale(1.1);
 }

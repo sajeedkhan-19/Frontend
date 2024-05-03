@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat+Alternates:wght@200&family=Open+Sans&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="form">
+        <form action="mailto:sajidkhan08143@gmail.com" method="post">
+            <fieldset>
+                <legend>Contact Me</legend>
+                <div class="form-container">
+                    <label for="name">Name</label><br />
+                    <input type="text" name="name" placeholder="Enter your name" size="30" required><br /><br />
+
+                    <label for="gender">Gender</label>
+                    <input type="radio" name="gender" value="male" class="form-radio-btn">Male
+                    <input type="radio" name="gender" value="female" class="form-radio-btn">Female<br /><br />
+
+                    <label for="email">Email</label><br />
+                    <input type="email" name="email" placeholder="Enter your email address" size="30" required><br /><br />
+
+                    <label for="phone">Phone Number (Optional)</label><br />
+                    <input type="tel" placeholder="Enter your phone number" size="30"><br /><br />
+
+                    <label for="message">Message</label><br />
+                    <textarea name="message" id="message" cols="31" rows="10" placeholder="Enter your message here..."></textarea><br /><br />
+
+                    <button type="submit" class="form-submit-btn">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>

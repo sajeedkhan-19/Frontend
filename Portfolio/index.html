@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Jacquard+24&family=Macondo&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/c5a7106d12.js" crossorigin="anonymous"></script>
+  </head>
+</head>
+<body style="background-color: rgb(51, 51, 51);">
+    <nav id="navbar" class="navbar navbar-expand-lg px-lg-3 fixed-top d-lg-block d-md-none d-sm-none" style="background-color: #333340;">
+        <div class="container-fluid">
+          <a class="navbar-brand"><span>Sajeed Khan</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="custom-toggler-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect class="line1" x="4" y="5" width="16" height="2"/>
+                <rect class="line2" x="4" y="11" width="16" height="2"/>
+                <rect class="line3" x="4" y="17" width="16" height="2"/>
+              </svg>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href="#home" onclick="toggleActive(this)">Home</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#about" onclick="toggleActive(this)">About</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#services" onclick="toggleActive(this)">Services</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#skills" onclick="toggleActive(this)">Skills</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#projects" onclick="toggleActive(this)">Projects</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#contact" onclick="toggleActive(this)">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <nav class="navbar fixed-top d-lg-none d-md-block d-sm-block" style="background-color: #333340;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><span>Sajeed Khan</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="custom-toggler-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect class="line1" x="4" y="5" width="16" height="2"/>
+                <rect class="line2" x="4" y="11" width="16" height="2"/>
+                <rect class="line3" x="4" y="17" width="16" height="2"/>
+              </svg>
+            </span>
+        </button>
+        <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #333340;">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span>Sajeed Khan</span></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body text-center">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item px-2">
+                  <a class="nav-link active" aria-current="page" href="#home" onclick="toggleActive(this)">Home</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link" href="#about" onclick="toggleActive(this)">About</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link" href="#services" onclick="toggleActive(this)">Services</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link" href="#skills" onclick="toggleActive(this)">Skills</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link" href="#projects" onclick="toggleActive(this)">Projects</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link" href="#contact" onclick="toggleActive(this)">Contact</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="home" class="container-fluid w-100 p-5">
+      <div class="row d-flex justify-content-center align-items-center pt-lg-3 pt-md-3 pt-sm-5">
+          <div class="col-lg-6 col-md-6 order-md-last">
+              <img src="./assets/man-avatar.png" alt="My-Image" width="100%" class="rounded-1 avatar">
+          </div>
+          <div class="col-lg-6 col-md-6 order-md-first">
+              <h2>Hello, It's me</h2>
+              <h1 class="name">Sajeed Khan</h1>
+              <h2>And I'm a <span>Web Developer</span></h2>
+              <p>I'm a developer exploring the world of coding and design. Join me on this journey as I showcase my projects and share my passion for creating captivating online experiences.</p>
+              <div class="social-icons d-flex">
+                  <i class="fa-brands fa-facebook me-3"></i>
+                  <i class="fa-brands fa-twitter me-3"></i>
+                  <i class="fa-brands fa-instagram me-3"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+              </div>
+              <button class="btn btn-outline-info rounded-5 mt-4">Download CV <i class="fa-solid fa-download fa-beat fa-sm"></i></button>
+          </div>
+      </div>
+  </div>
+
+    <div id="about" class="container-fluid w-100 my-5 p-5">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-6 col-md-6">
+          <img src="./assets/man-avatar.png" alt="about-pic" width="90%" class="rounded-1 avtar">
+        </div>
+        <div class="col-lg-6 col-md-6 mt-3">
+          <h2>About <span class="text-info">Me</span></h2>
+          <h4>Web Developer!</h4>
+          <p>I'm a developer exploring the world of coding and design. Join me on this journey as I show case my projects and share my passion for creating captivating online experiences.</p>
+          <a href="#" class="btn btn-outline-info rounded-5">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="services" class="container-fluid w-100 my-5 p-5">
+      <h2 class="text-center my-3">My <span class="text-info">Services</span></h2>
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="card col-lg-4 col-md-4 text-center mx-2 my-3 p-2 rounded-4" style="width: 26rem; background-color: #333340;">
+          <div class="card-body text-light">
+            <i class="fa-solid fa-code icon"></i><br>
+            <h3 class="card-title pt-1">Web Development</h3>
+            <p class="card-text">Proficient web developer skilled in front-end and back-end technologies,
+              with expertise in HTML, CSS, JavaScript, and server-side languages.
+              Also specialized in creating responsive, visually appealing websites and applications.</p>
+            <a href="#" class="btn btn-outline-info rounded-5">Read More</a>
+          </div>
+        </div>
+        <div class="card col-lg-4 col-md-4 text-center mx-2 my-3 p-2 rounded-4" style="width: 26rem; background-color: #333340;">
+          <div class="card-body text-light">
+            <i class="fa-solid fa-laptop-code icon"></i><br>
+            <h3 class="card-title pt-1">S/W Development</h3>
+            <p class="card-text">Aspiring developer with
+              foundational knowledge in C,
+              C++, Java and PHP. Eager to learn
+              and apply these programming languages to create
+              innovative and impactful projects and also work as part of a
+              collaborative team.</p>
+            <a href="#" class="btn btn-outline-info rounded-5">Read More</a>
+          </div>
+        </div>
+        <div class="card col-lg-4 col-md-4 text-center mx-2 my-3 p-2 rounded-4" style="width: 26rem; background-color: #333340;">
+          <div class="card-body text-light">
+            <i class="fa-solid fa-paintbrush icon"></i><br>
+            <h3 class="card-title pt-1">Graphic Designing</h3>
+            <p class="card-text">Aspiring graphic designer with foundational expertise in Adobe Creative Suite, 
+              including Photoshop, Illustrator, and InDesign. Eager to expand skills and 
+              utilize design principles to craft visually stunning and impactful projects.</p>
+            <a href="#" class="btn btn-outline-info rounded-5">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="skills" class="container-fluid w-100 p-5">
+      <h2 class="text-center mt-3">My <span class="text-info">Skills</span></h2>
+      <div class="row mt-5 d-flex justify-content-center align-items-center">
+        <div class="skills-container d-flex justify-content-center align-items-center">
+          <img src="./assets/html.png" alt="HTML5" width="20%">
+          <img src="./assets/css.png" alt="CSS3" width="20%">
+          <img src="./assets/js.png" alt="Javascript" width="20%">
+          <img src="./assets/java.png" alt="Java" width="20%">
+          <img src="./assets/sql.png" alt="SQL" width="20%">
+          <img src="./assets/bootstrap.png" alt="Bootstrap" width="20%">
+          <img src="./assets/react.png" alt="React" width="20%">
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="container-fluid w-100 p-5">
+      <h2 class="text-center my-3">My <span class="text-info">Projects</span></h2>
+      <div class="row">
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="card pro-card text-center my-3 p-1">
+            <a href="https://sajeedkhan-19.github.io/Frontend/Tribute-Page/index.html"><img src="./assets/pro-1.png" class="card-img" alt="..."></a>
+            <div class="card-img-overlay pro-card-body">
+              <h5 class="card-title">Tribute Page</h5>
+              <p class="card-text">A page tributing Dr. A.P.J Abdul Kalam Sir.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="card pro-card text-center my-3 p-1">
+            <a href="https://sajeedkhan-19.github.io/Frontend/Job-Application-Form/index.html"><img src="./assets/pro-2.png" class="card-img" alt="..."></a>
+            <div class="card-img-overlay pro-card-body">
+              <h5 class="card-title">Job Application Form</h5>
+              <p class="card-text">A simple job application form.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="card pro-card text-center my-3 p-1">
+            <a href="https://sajeedkhan-19.github.io/Frontend/Hotel-Booking-Site/index.html"><img src="./assets/pro-3.png" class="card-img" alt="..."></a>
+            <div class="card-img-overlay pro-card-body">
+              <h5 class="card-title">Hotel Booking Site</h5>
+              <p class="card-text">Explore the hotel booking site and book your comfort room.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="card pro-card text-center my-3 p-1">
+            <a href="https://sajeedkhan-19.github.io/Frontend/My%20Site/index.html"><img src="./assets/pro-4.png" class="card-img" alt="..."></a>
+            <div class="card-img-overlay pro-card-body">
+              <h5 class="card-title">Personal Site</h5>
+              <p class="card-text">My personal site showing my skills and services I can provide.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="contact" class="container-fluid w-100 p-5">
+      <h2 class="text-center mb-3">Contact <span class="text-info">Me</span></h2>
+      <div class="row justify-content-center mt-5 mb-4">
+        <form action="mailto:sajidkhan08143@gmail.com" method="post" class="w-100 mb-4" enctype="text/plain">
+          <div class="form-body p-3" style="background-color: #333340;">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label><br>
+              <textarea name="message" id="message" placeholder="Enter the message..." rows="5" class="form-control rounded-3" required></textarea>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="phone" class="form-label">Phone Number (Optional)</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone number">
+              </div>
+              <div class="col-md-6">
+                <label for="website" class="form-label">Website (Optional)</label>
+                <input type="url" class="form-control" id="website" name="website" placeholder="Website link">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-outline-info w-50 mx-auto d-block mt-4">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+      function toggleActive(element) {
+        // Remove 'active' class from all nav links
+        var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        navLinks.forEach(function(link) {
+          link.classList.remove('active');
+        });
+
+        // Add 'active' class to the clicked link
+        element.classList.add('active');
+      }
+    </script>
+  </body>
+</html>

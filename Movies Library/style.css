@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    font-family: "Audiowide", sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.page-heading {
+    box-shadow: 2px 0px 10px rgba(0, 255, 255, 0.9);
+}
+
+#library {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 50px;
+}
+
+.movie-card {
+    background-color: whitesmoke;
+    color: rgb(51, 50, 50);
+    box-shadow: 2px 2px 10px rgba(0, 255, 255, 0.9);
+    padding: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.movie-card img {
+    width: 450px;
+    height: 300px;
+    margin-bottom: 10px;
+}

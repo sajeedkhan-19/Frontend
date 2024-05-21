@@ -1,4 +1,4 @@
-const moviesData = [
+[
     {
         "title": "Baazigar",
         "year": "1993",
@@ -1312,53 +1312,3 @@ const moviesData = [
         "posterurl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTgwMzEzNjYyNl5BMl5BanBnXkFtZTcwOTg1MDI3Mw@@._V1_SX346_CR0,0,346,499_AL_.jpg"
     }
 ]
-
-const parentDiv = document.getElementById("library");
-function displayData(moviesData){
-    moviesData.forEach(function (movie) {
-        const childDiv = document.createElement("div");
-        childDiv.classList.add("movie-card");
-        const title = document.createElement("h3");
-        title.textContent = "Title: " + movie.title;
-        const year = document.createElement("p");
-        year.textContent = "Release Year: " + movie.year;
-        const genres = document.createElement("p");
-        genres.textContent = "Genre: " + movie.genres;
-        const releaseDate = document.createElement("p");
-        releaseDate.textContent = "Release Date: " + movie.releaseDate;
-        const actors = document.createElement("p");
-        actors.textContent = "Actors: " + movie.actors;
-        const imdbRating = document.createElement("p");
-        imdbRating.textContent = "IMDB Rating: " + movie.imdbRating;
-        const posterurl = document.createElement("img");
-        posterurl.setAttribute('src', movie.posterurl);
-        posterurl.alt = movie.title;
-        const favbtn = document.createElement("button");
-        favbtn.textContent = "Add to favorite 🩷";
-        favbtn.addEventListener("click", addToFav);
-        childDiv.append(posterurl, title, genres, year, releaseDate, actors, imdbRating, favbtn);
-        parentDiv.appendChild(childDiv);
-    })
-}
-displayData(moviesData);
-
-// Add to favorite function
-function addToFav(favMovie) {
-    if (favMovie.target.textContent == "Add to favorite 🩷") {
-        alert("Movie added to favorites!");
-        favMovie.target.textContent = "Remove from favorite ❌";
-    }
-    else {
-        favMovie.target.textContent = "Add to favorite 🩷";
-        alert("Movie removed from favorites!");
-    }
-}
-
-// Search functionality
-document.querySelector('form').addEventListener('submit', function(search) {
-    search.preventDefault();
-    const searchMovie = search.target.querySelector('input').value.toLowerCase();
-    const filteredMovies = moviesData.filter(movie => movie.title.toLowerCase().includes(searchMovie));
-    parentDiv.innerHTML = '';
-    displayData(filteredMovies);
-});

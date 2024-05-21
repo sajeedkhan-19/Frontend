@@ -18,9 +18,8 @@
 <body>
     <nav class="navbar bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand text-light fs-3" href="./index.html">Movies <span class="text-primary">Library</span></a>
-            <form class="d-flex" role="search" style="width: max-content;">
-              <a class="navbar-brand text-light" href="./favourites.html"><span class="fav">Favourites</span></a>
+            <a class="navbar-brand text-light fs-3">Movies <span class="text-primary">Library</span></a>
+            <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search for a movie" aria-label="Search">
               <button class="btn btn-outline-primary" type="submit">Search</button>
             </form>
@@ -31,14 +30,15 @@
       <nav class="pb-2 bg-body" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <div class="container-fluid nav-2 py-2">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item active"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page"><a>Movies</a></li>
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active"><a href="./index.html">Movies</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><a>Favourites</a></li>
             </ol>
         </div>
       </nav>
 
       <div class="container-fluid">
-        <div id="library" class="row"></div>
+        <div id="favourites" class="row"></div>
       </div>
 
     <script src="./script.js"></script>

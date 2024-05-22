@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(to top, #09203f 0%, #05233b 100%);
+}
+
+#clock {
+    font-size: 3em;
+    position: absolute;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    color: whitesmoke;
+    padding: 20px 40px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 20px rgba(251, 251, 251, 1.1);
+}

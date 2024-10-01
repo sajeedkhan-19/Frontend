@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: "Playwrite DE Grund", cursive;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.recipe-container {
+  width: 100%;
+  max-width: fit-content;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  width: 650px;
+}
+
+.recipe-img {
+  width: 100%;
+}
+
+.time-serving li,
+img {
+  font-weight: 700;
+  list-style: none;
+  margin-right: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* For mobile devices (small screens) */
+@media (max-width: 576px) {
+  body {
+    padding: 0;
+  }
+
+  .recipe-container {
+    max-width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .recipe-title h3 {
+    font-size: 2rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #ingredients li,
+  #instructions li {
+    font-weight: 500;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .card-footer {
+    flex-direction: column;
+  }
+
+  #ingredientsEnd-alert,
+  #instructionsEnd-alert {
+    width: 100%;
+  }
+}
+
+/* For tablets and medium devices */
+@media (min-width: 577px) and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+
+  .recipe-title h3 {
+    font-size: 1.75rem;
+  }
+
+  .time-serving li {
+    font-size: 0.875rem;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #ingredients li,
+  #instructions li {
+    font-weight: 500;
+  }
+
+  /* .btn {
+    flex-grow: 1;
+    margin: 0 5px;
+  } */
+}
+
+/* For larger devices (desktops) */
+@media (min-width: 769px) {
+  .card {
+    width: 650px;
+  }
+
+  .recipe-title h3 {
+    font-size: 2rem;
+  }
+
+  .time-serving li {
+    font-size: 1rem;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: row;
+  }
+
+  .btn {
+    flex-grow: unset;
+    margin: 0 10px;
+  }
+
+  #ingredientsEnd-alert,
+  #instructionsEnd-alert {
+    width: 75%;
+  }
+}
